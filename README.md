@@ -5,7 +5,14 @@ October 24 2020
 
 ## Introduction ##
 
-The purpose of this example is to illustrate how to operate a ML model (in PMML format) in a real time pipeline using kafka streams.
+According to some industry standards (source : LightBend ) there are mainly 4 model serving architectures:
+
+1. Embedding model as code, deployed into a stream engine
+1. Model as data easier dynamic updates
+1. Model serving as a service use a separate service, access from the streaming  engine
+1. Dynamically controlled streams one way to implement model as data in a streaming engine
+
+The purpose of this example is to illustrate dynamically controlled streams by showing how to operate a ML model as data (in PMML format) in a real time pipeline using kafka streams.
 
 This PoC is based on the famous iris classification ml model.
 
